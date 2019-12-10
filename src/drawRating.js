@@ -15,4 +15,3 @@ const drawRating = (vote) => {
 };
 
 export default drawRating;
-

@@ -1,10 +1,10 @@
-const cakes = [0, 0, 0];
-const pans = Array(2).fill(null);
+const cakesColl = [0, 0, 0];
+const pansColl = Array(2).fill(null);
 
-const isEmptyPan = (pans, index) => pans[index] === null;
+const isEmptyPan = (pan, index) => pan[index] === null;
 
-const cook = (array, pans) => {
-  const [cake1, cake2, cake3] = array;
+const cook = (cakes, pans) => {
+  const [cake1, cake2, cake3] = cakes;
 
   const cakesObj = {
     cake1,
@@ -30,7 +30,7 @@ const cook = (array, pans) => {
       console.log(`Cooking time ${cakesObj.time}.`);
     }
 
-    if(cakesObj.cake1 === 2 && cakesObj.cake3 === 1) {
+    if (cakesObj.cake1 === 2 && cakesObj.cake3 === 1) {
       cakesObj.cake2 = 2;
       cakesObj.cake3 = 2;
       cakesObj.time = 3;
@@ -39,7 +39,7 @@ const cook = (array, pans) => {
     }
   }
   console.log(`Cakes are ready! Cooking time ${cakesObj.time}`);
-  return  cakesObj;
+  return cakesObj;
 };
 
-cook(cakes, pans);
+console.log(cook(cakesColl, pansColl));

@@ -21,3 +21,5 @@ rules:
   no-console: 0
   max-len: 0
   import/order: 0
+  no-useless-escape: 0
+  no-restricted-syntax: 0
